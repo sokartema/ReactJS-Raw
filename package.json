@@ -1,0 +1,14 @@
+{
+  "name": "reactjsraw",
+  "version": "1.0.0",
+  "description": "reactjs raw",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
+  "author": "Jazer Abreu",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {}
+}
