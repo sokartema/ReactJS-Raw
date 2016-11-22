@@ -1,0 +1,24 @@
+{
+  "name": "reactjs",
+  "authors": [
+    "Jazer Abreu <sokartema@gmail.com>"
+  ],
+  "description": "Examples of ReactJS",
+  "main": "",
+  "keywords": [
+    "ReactJS",
+    "Examples",
+    "Tutorial"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

@@ -2,4 +2,5 @@
 
 ## Execute
 
+- bower install
 - open each example
