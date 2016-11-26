@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>I'm in a React app!</title>
+  </head>
+  <body>
+    <div id="react-app"></div>
+
+    <script src="../bower_components/react/react.min.js"></script>
+    <script src="../bower_components/react/react-dom.min.js"></script>
+    <script>
+      var object = [
+        {
+          name: "Jazer"
+        },
+        {
+          name: "Pedro"
+        },
+        {
+          name: "Christie"
+        }
+
+      ];
+      var Contact = React.createClass({
+        propTypes: {
+          name: React.PropTypes.string.isRequired
+        },
+        render: function(){
+          return React.createElement('h1', {}, this.props.name);
+        }
+      });
+
+      var element = object.map(function(o){ return React.createElement(Contact, o);});
+
+      console.log(React.isValidElement(element));
+      console.log(element);
+
+      var rootElement = React.createElement('div', {}, element);
+
+      console.log(React.isValidElement(rootElement));
+      console.log(rootElement);
+
+      ReactDOM.render(rootElement , document.getElementById('react-app'));
+
+      setTimeout(function(){
+        ReactDOM.unmountComponentAtNode(document.getElementById('react-app'))}, 10000);
+
+
+    </script>
+  </body>
+</html>
